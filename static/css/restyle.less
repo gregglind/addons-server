@@ -956,16 +956,77 @@ button.good {
 
   > ul.personas {
     border: 0;
+
+    li {
+      margin: 1em 0 0;
+      padding: 0;
+    }
+  }
+}
+
+.persona,
+.persona-hover {
+  border: 0;
+
+  .persona-inner {
+    background: none;
   }
 
-  .persona-install {
-    border: 0;
+  .persona-preview [data-browsertheme] {
+    border: .25em solid #c8e8f2 !important;
+  }
+}
 
-    .add {
-      background-image: none;
-      background-color: #57bd35;
-      text-shadow: none;
-    }
+.persona-install {
+  border: 0;
+  bottom: -4px;
+  left: -4px;
+
+  .add {
+    background-image: none;
+    background-color: #57bd35;
+    border: 0;
+    text-shadow: none;
+  }
+
+  button {
+    border-radius: 0;
+  }
+}
+
+.persona-inner {
+  border-radius: 0;
+  padding: 0;
+}
+
+.persona .created,
+.persona .reviews,
+.persona .users {
+  color: #000;
+}
+
+.persona-hover .persona-preview {
+  background: none;
+}
+
+.category-landing .addons-column ul li {
+  overflow: inherit;
+
+  a {
+    padding: 0;
+  }
+
+  .persona-preview .created,
+  .persona-preview .users,
+  .persona-preview .reviews,
+  .persona-preview .review-decal {
+    float: left;
+    position: static;
+  }
+
+  .addon-title-style-refresh {
+    clear: both;
+    padding: 55px 0 0;
   }
 }
 
@@ -1020,4 +1081,8 @@ button.good {
   .close {
     border-radius: 0;
   }
+}
+
+.addon-title-style-refresh {
+  display: block;
 }
